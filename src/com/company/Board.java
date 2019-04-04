@@ -4,6 +4,10 @@ public class Board {
     static int [] field = {0,0,0,
             0,0,0,
             0,0,0};
+    static void clearField()
+    {
+        Arrays.fill(field, 0);
+    }
     static void drawField(){
         System.out.println("     |     |     ");
         for (int i = 0; i < field.length; i++) {
